@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install zip tool
-        uses: dknayak1309/action-zip@v1
+        uses: montudor/action-zip@v1
       - name: Create Zip file for Lambda function
         run: zip -r code.zip .
       - name: AWS CLI v2
